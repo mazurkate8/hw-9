@@ -1,6 +1,6 @@
-package jsonparser;
+package com.homework.jsonparser;
 
-import util.Parser;
+import com.homework.util.Parser;
 
 import java.io.*;
 import java.util.ArrayList;

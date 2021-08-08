@@ -1,4 +1,4 @@
-package jsonparser;
+package com.homework.jsonparser;
 
 public class User {
 

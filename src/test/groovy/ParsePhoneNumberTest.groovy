@@ -1,4 +1,4 @@
-import phoneparser.ParsePhoneNumber
+import com.homework.phoneparser.ParsePhoneNumber
 import spock.lang.Specification
 
 class ParsePhoneNumberTest extends Specification {

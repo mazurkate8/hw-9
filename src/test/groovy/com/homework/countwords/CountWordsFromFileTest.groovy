@@ -1,4 +1,4 @@
-package countwords
+package com.homework.countwords
 
 
 import spock.lang.Specification

@@ -1,6 +1,6 @@
-package phoneparser;
+package com.homework.phoneparser;
 
-import util.Parser;
+import com.homework.util.Parser;
 
 import java.io.*;
 import java.util.ArrayList;

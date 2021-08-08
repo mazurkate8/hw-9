@@ -1,6 +1,6 @@
-package countwords;
+package com.homework.countwords;
 
-import util.Parser;
+import com.homework.util.Parser;
 
 import java.io.BufferedReader;
 import java.io.File;
