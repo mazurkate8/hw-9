@@ -2,7 +2,7 @@
 
  {
 
-"name":"alice"
+"name":"alice",
 
 "age":21
 
@@ -10,49 +10,9 @@
 
  {
 
-"name":"ryan"
+"name":"ryan",
 
 "age":30
-
- },
-
- {
-
-"name":"Maks"
-
-"age":55
-
- },
-
- {
-
-"name":"Kate"
-
-"age":88
-
- },
-
- {
-
-"name":"Aleksandr"
-
-"age":897
-
- },
-
- {
-
-"name":"Viktor"
-
-"age":12
-
- },
-
- {
-
-"name":"Nik"
-
-"age":15
 
  },
 

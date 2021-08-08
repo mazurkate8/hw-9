@@ -40,6 +40,7 @@ public class User {
             .append('"')
             .append(name)
             .append('"')
+            .append(',')
             .append("\n\n")
             .append('"')
             .append("age")
