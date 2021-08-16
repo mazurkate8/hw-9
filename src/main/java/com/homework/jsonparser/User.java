@@ -33,15 +33,18 @@ public class User {
             .append("\n")
             .append(" {")
             .append("\n\n")
+            .append(' ')
             .append('"')
             .append("name")
             .append('"')
             .append(':')
+            .append(' ')
             .append('"')
             .append(name)
             .append('"')
             .append(',')
             .append("\n\n")
+            .append(' ')
             .append('"')
             .append("age")
             .append('"')
@@ -49,8 +52,7 @@ public class User {
             .append(age)
             .append("\n")
             .append("\n")
-            .append(" },")
-            .append("\n");
+            .append(" }");
         return  stb.toString();
     }
 }

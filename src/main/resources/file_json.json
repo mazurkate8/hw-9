@@ -2,18 +2,18 @@
 
  {
 
-"name":"alice",
+ "name": "alice",
 
-"age":21
+ "age":21
 
  },
 
  {
 
-"name":"ryan",
+ "name": "ryan",
 
-"age":30
+ "age":30
 
- },
+ }
 
 ]

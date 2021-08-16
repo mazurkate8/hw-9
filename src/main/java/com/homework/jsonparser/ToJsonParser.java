@@ -32,9 +32,14 @@ public class ToJsonParser implements Parser {
 
     private void writeJson(File file) {
         try (PrintWriter writer = new PrintWriter(file);) {
+            int count = 0;
             writer.write("[\n");
             for (User user : users) {
-                writer.write(user.toString());
+                count++;
+                writer.write(user.toString() + ",\n");
+                if(count== users.size()) {
+                    writer.write(user.toString() + "\n");
+                }
             }
             writer.write("\n]");
             writer.flush();
