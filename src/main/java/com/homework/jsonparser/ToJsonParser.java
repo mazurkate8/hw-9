@@ -36,9 +36,9 @@ public class ToJsonParser implements Parser {
             writer.write("[\n");
             for (User user : users) {
                 count++;
-                writer.write(user.toString() + ",\n");
+                writer.write(user + ",\n");
                 if(count== users.size()) {
-                    writer.write(user.toString() + "\n");
+                    writer.write(user + "\n");
                 }
             }
             writer.write("\n]");
