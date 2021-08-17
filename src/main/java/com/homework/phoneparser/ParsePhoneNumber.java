@@ -5,6 +5,7 @@ import com.homework.util.Parser;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.io.File;
@@ -25,7 +26,7 @@ public class ParsePhoneNumber implements Parser {
             String line;
             while ((line = br.readLine()) != null) {
                if(isAcceptableLine(line)){
-                   phoneList.add(isAcceptableLine(line)?line:"");
+                   phoneList.add(line);
                }
             }
         } catch (IOException e) {
@@ -35,13 +36,13 @@ public class ParsePhoneNumber implements Parser {
 
     @Override
     public boolean isAcceptableLine(final String phoneNumber) {
-            Pattern pattern = Pattern.compile(PHONE_PATTERN);
-            Matcher matcher = pattern.matcher(phoneNumber);
-            return matcher.matches();
+        Pattern pattern = Pattern.compile(PHONE_PATTERN);
+        Matcher matcher = pattern.matcher(phoneNumber);
+        return matcher.matches();
     }
 
-    public String printAcceptablePhoneNumbers(){
-        return phoneList.toString();
+    public void printAcceptablePhoneNumbers() {
+        System.out.println(phoneList);
     }
 
     public List<String> getPhoneList() {
@@ -51,6 +52,6 @@ public class ParsePhoneNumber implements Parser {
     public static void main(String[] args) {
         ParsePhoneNumber phones = new ParsePhoneNumber();
         phones.parseFile(new File("src/main/resources/file.txt"));
-        System.out.println(phones.printAcceptablePhoneNumbers());
+        phones.printAcceptablePhoneNumbers();
     }
 }
